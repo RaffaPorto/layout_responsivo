@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: red;
+    padding-top: 16px;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: rgb(161, 85, 85);
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 24px;
+}
+
+#sobre-a-loja div p {
+    font-size: 1.1em;
+    display: flex;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.lista-acessorios li {
+    list-style: none;
+    max-width: 30%;
+    
+}
+
+.lista-acessorios li h3{
+    margin: 16px 0;
+}
+
+.lista-acessorios li img{
+    max-width: 200px;
+} 
+
+.lista-acessorios {
+    flex-wrap: wrap;
+}
+
+.lista-acessorios li button {
+    display: block;
+    width: 90%;
+    padding: 8px 0;
+    border: none;
+    background-color:  rgb(161, 85, 85);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-acessorios li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+.conteudo {
+    display: grid;
+    grid-auto-columns: repeat(2, 49%);
+    column-gap: 1%;
+
+}
+
+.acessorios {
+    display: grid;
+    grid-auto-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+}
+
+@media screen  and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 80%;
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        max-width: 250px;
+        max-height: 250px;
+        margin-right: 24px;
+    }
+    
+    #sobre-a-loja div p {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    .lista-acessorios {
+        display: block;
+    }
+
+    .lista-acessorios {
+        margin-bottom: 32px;
+    }
+
+}
+
+@media screen and (min-widht: 768px) and (max-widht: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .acessorios {
+        display: grid;
+        grid-auto-columns: repeat(3, 32%);
+    }
+    
+}
