@@ -81,16 +81,20 @@ section h2 {
 
 .lista-acessorios li {
     list-style: none;
-    max-width: 30%;
-    
+    max-width: 20%;
+    margin-left: 50px;
 }
 
 .lista-acessorios li h3{
     margin: 16px 0;
 }
 
+.lista-acessorios li h3 {
+    font-size: 16px;
+}
+
 .lista-acessorios li img{
-    max-width: 200px;
+    max-width: 100px;
 } 
 
 .lista-acessorios {
@@ -104,7 +108,7 @@ section h2 {
     border: none;
     background-color:  rgb(161, 85, 85);
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
@@ -125,7 +129,7 @@ section h2 {
 
 .acessorios {
     display: grid;
-    grid-auto-columns: repeat(3, 32.6%);
+    grid-auto-columns: repeat(4, 32.3%);
     column-gap: 1%;
 }
 
@@ -160,14 +164,19 @@ section h2 {
 
 }
 
-@media screen and (min-widht: 768px) and (max-widht: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .container {
         max-width: 90%;
     }
 
     .acessorios {
         display: grid;
-        grid-auto-columns: repeat(3, 32%);
+        grid-auto-columns: repeat(2, 32%);
     }
-    
+
+    .container-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
 }
